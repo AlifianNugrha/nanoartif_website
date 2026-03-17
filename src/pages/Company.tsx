@@ -2,10 +2,9 @@ import { useRef, useLayoutEffect, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import VisionSection from '../components/VisionSection';
-import GroupSection from '../components/GroupSection';
+import MissionSection from '../components/MissionSection';
+import OrganizationSection from '../components/OrganizationSection';
 import PresenceSection from '../components/PresenceSection';
-import TechnologySection from '../components/TechnologySection';
-import HistorySection from '../components/HistorySection';
 import QualitySection from '../components/QualitySection';
 import ProductsSection from '../components/ProductsSection';
 import SustainabilitySection from '../components/SustainabilitySection';
@@ -57,11 +56,10 @@ export default function Company() {
   }, []);
 
   const navItems = [
-    { name: 'Vision & Mission', id: 'vision' },
-    { name: 'Nano Group', id: 'group' },
+    { name: 'Vision', id: 'vision' },
+    { name: 'Mission', id: 'mission' },
+    { name: 'Organization', id: 'organization' },
     { name: 'Presence', id: 'presence' },
-    { name: 'Technology', id: 'tech' },
-    { name: 'History', id: 'history' },
     { name: 'Quality', id: 'quality' },
     { name: 'Certified Products', id: 'products' },
     { name: 'Sustainability', id: 'sustainability' }
@@ -89,10 +87,9 @@ export default function Company() {
       <SubNav navItems={navItems} activeSection={activeSection} scrollTo={scrollTo} />
       <main>
         <VisionSection />
-        <GroupSection />
+        <MissionSection />
+        <OrganizationSection />
         <PresenceSection />
-        <TechnologySection />
-        <HistorySection />
         <QualitySection />
         <ProductsSection />
         <SustainabilitySection />
