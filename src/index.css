@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Barlow:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Variabel Font */
+  --font-main: "Plus Jakarta Sans", sans-serif;
+  --font-condensed: "Plus Jakarta Sans", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-secondary: "Barlow", sans-serif;
+
+  /* Variabel Warna */
+  --color-primary-blue: #005a8d;
+  --color-secondary-blue: #003b5c;
+  --color-text-dark: #1a1a1a;
+  --color-bg-light: #f8f8f8;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+    /* Offset agar judul section tidak tertutup navbar saat discroll */
+    scroll-padding-top: 100px;
+  }
+
+  body {
+    @apply w-full m-0 p-0 overflow-x-hidden bg-white text-text-dark font-main antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-main uppercase font-extrabold tracking-tight;
+  }
+
+  /* Reset link agar tidak ada garis bawah default */
+  a {
+    @apply no-underline transition-all duration-300;
+  }
+}
+
+/* Custom Class untuk Efek Blur Navbar */
+.nav-blur {
+  @apply backdrop-blur-xl bg-white/80 border border-black/5 shadow-lg;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee2 {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee2 {
+  animation: marquee2 40s linear infinite;
+}
