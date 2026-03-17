@@ -30,15 +30,15 @@ export default function ContactSection() {
         {/* Left Side: Contact Info */}
         <div className="contact-item">
           <h2 className="text-3xl md:text-4xl font-light text-black tracking-tight leading-[1.1] mb-4 normal-case">
-            Let's build the future, together.
+            Mari bangun masa depan, bersama.
           </h2>
           <p className="text-sm md:text-base text-gray-500 font-light leading-relaxed max-w-sm mb-8">
-            Whether you are looking for advanced automation solutions or want to collaborate to solve real-world problems. We are here.
+            Apakah Anda mencari solusi otomasi canggih atau ingin berkolaborasi untuk menyelesaikan masalah dunia nyata. Kami di sini untuk Anda.
           </p>
 
           <div className="space-y-6">
             <div>
-              <h4 className="text-black font-bold uppercase tracking-widest text-[10px] mb-1">Headquarters</h4>
+              <h4 className="text-black font-bold uppercase tracking-widest text-[10px] mb-1">Kantor Pusat</h4>
               <p className="text-gray-600 font-medium text-sm">Surakarta, Jawa Tengah<br />Indonesia</p>
             </div>
             <div>
@@ -46,7 +46,7 @@ export default function ContactSection() {
               <p className="text-primary-blue font-medium text-sm hover:text-black transition-colors cursor-pointer">hello@nanoartif.my.id</p>
             </div>
             <div>
-              <h4 className="text-black font-bold uppercase tracking-widest text-[10px] mb-1">Phone</h4>
+              <h4 className="text-black font-bold uppercase tracking-widest text-[10px] mb-1">Telepon</h4>
               <p className="text-gray-600 font-medium text-sm">+62 838-4158-0448</p>
             </div>
           </div>
@@ -54,28 +54,28 @@ export default function ContactSection() {
 
         {/* Right Side: Contact Form */}
         <div className="contact-item bg-white p-6 md:p-8 rounded-lg shadow-lg border border-gray-100 max-w-md ml-auto mr-auto lg:mr-0 w-full">
-          <h3 className="text-xl font-light text-black mb-6">Send us a message</h3>
+          <h3 className="text-xl font-light text-black mb-6">Kirim pesan kepada kami</h3>
           <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-1">
-                <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">First Name</label>
+                <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Nama Depan</label>
                 <input type="text" className="w-full border-b border-gray-300 py-1.5 focus:outline-none focus:border-primary-blue transition-colors bg-transparent text-sm" />
               </div>
               <div className="space-y-1">
-                <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Last Name</label>
+                <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Nama Belakang</label>
                 <input type="text" className="w-full border-b border-gray-300 py-1.5 focus:outline-none focus:border-primary-blue transition-colors bg-transparent text-sm" />
               </div>
             </div>
             <div className="space-y-1">
-              <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Email Address</label>
+              <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Alamat Email</label>
               <input type="email" className="w-full border-b border-gray-300 py-1.5 focus:outline-none focus:border-primary-blue transition-colors bg-transparent text-sm" />
             </div>
             <div className="space-y-1">
-              <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Message</label>
+              <label className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Pesan</label>
               <textarea rows={3} className="w-full border-b border-gray-300 py-1.5 focus:outline-none focus:border-primary-blue transition-colors bg-transparent resize-none text-sm"></textarea>
             </div>
             <button type="submit" className="w-full bg-primary-blue text-white font-light tracking-widest uppercase text-[10px] py-3 rounded hover:bg-black transition-colors mt-2">
-              Submit Inquiry
+              Kirim Pesan
             </button>
           </form>
         </div>

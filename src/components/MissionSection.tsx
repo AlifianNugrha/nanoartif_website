@@ -8,20 +8,20 @@ export default function MissionSection() {
 
   const missions = [
     {
-      title: "Clean Energy for All",
-      desc: "We strive to make renewable energy accessible and efficient for communities worldwide, reducing the carbon footprint of industrial operations."
+      title: "Otomasi Cerdas",
+      desc: "Kami menghadirkan teknologi AI tercanggih untuk mengotomatisasi proses bisnis yang repetitif, meningkatkan efisiensi dan akurasi operasional."
     },
     {
-      title: "Innovative Engineering",
-      desc: "Our team continuously pushes the boundaries of wind turbine technology, ensuring maximum performance even in challenging environmental conditions."
+      title: "Transformasi Digital",
+      desc: "Membantu perusahaan bertransformasi dari sistem tradisional ke ekosistem digital yang modern, scalable, dan aman."
     },
     {
-      title: "Sustainable Growth",
-      desc: "We believe in progress that doesn't compromise the future. Every project we undertake is designed with long-term ecological balance in mind."
+      title: "Inovasi Tanpa Batas",
+      desc: "Terus mengeksplorasi teknologi terbaru untuk memberikan solusi IT yang relevan dengan tantangan industri masa kini dan masa depan."
     },
     {
-      title: "Global Partnership",
-      desc: "By collaborating with international partners, we scale our impact and bring best-in-class green tech to every corner of the globe."
+      title: "Kemitraan Strategis",
+      desc: "Menjadi mitra terpercaya dalam memberikan konsultasi tech yang mendalam untuk membantu pertumbuhan bisnis Anda secara berkelanjutan."
     }
   ];
 
@@ -67,13 +67,13 @@ export default function MissionSection() {
           {/* Background Text */}
           <div className="reveal-item">
             <h2 className="text-4xl md:text-5xl font-light text-black leading-[0.8] tracking-tighter normal-case">
-              Our Mission
+              Misi Kami
             </h2>
           </div>
 
           <div className="mt-6 w-70 h-1 bg-primary-blue relative z-20"></div>
           <p className="mt-4 text-4xl font-medium text-black max-w-xs tracking-tight relative z-20">
-            Driving the transition to a sustainable future through excellence in wind technology.
+            Mendorong efisiensi bisnis melalui keunggulan teknologi otomasi AI.
           </p>
         </div>
       </div>

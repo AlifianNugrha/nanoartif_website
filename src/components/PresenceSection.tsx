@@ -7,10 +7,10 @@ export default function PresenceSection() {
   const imageRef = useRef<HTMLDivElement>(null);
 
   const locations = [
-    { city: 'South Tyrol, Italy', desc: 'Headquarters in Vipiteno. R&D, Sales, and Customer Service.' },
-    { city: 'Telfs, Austria', desc: 'Production of main components, generators, and frames.' },
-    { city: 'Tamil Nadu, India', desc: 'Production of generators, hubs, and blades for the Asian market.' },
-    { city: 'Vienna, Austria', desc: 'Research & Development and Monitoring branch.' },
+    { city: 'Jakarta, Indonesia', desc: 'Pusat operasional, konsultasi IT, dan manajemen proyek digital.' },
+    { city: 'Bandung, Indonesia', desc: 'Hub riset dan pengembangan (R&D) untuk solusi otomasi AI.' },
+    { city: 'Surabaya, Indonesia', desc: 'Layanan dukungan pelanggan dan implementasi infrastruktur IT.' },
+    { city: 'Yogyakarta, Indonesia', desc: 'Pusat pengembangan perangkat lunak dan talenta teknologi.' },
   ];
 
   useLayoutEffect(() => {
@@ -109,13 +109,13 @@ export default function PresenceSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-primary-blue/60 via-transparent to-transparent"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-10">
             <div className="w-1 h-20 bg-white/30 mb-8 rounded-full"></div>
-            <p className="font-bold text-3xl md:text-6xl tracking-[0.3em] text-white drop-shadow-2xl  font-light ">GLOBAL NETWORK</p>
+            <p className="font-bold text-3xl md:text-6xl tracking-[0.3em] text-white drop-shadow-2xl font-light">JARINGAN LOKAL</p>
             <div className="mt-8 flex items-center gap-4 text-white/80 font-bold tracking-widest text-xs uppercase">
-              <span>Europe</span>
+              <span>Jakarta</span>
               <span className="w-2 h-2 rounded-full bg-white"></span>
-              <span>Asia</span>
+              <span>Bandung</span>
               <span className="w-2 h-2 rounded-full bg-white"></span>
-              <span>Americas</span>
+              <span>Surabaya</span>
             </div>
           </div>
         </div>
@@ -127,12 +127,11 @@ export default function PresenceSection() {
           {/* Left Column: Title + Description */}
           <div className="lg:w-1/3">
             <span className="text-white font-light text-[12px] tracking-widest mb-6 block">
-              World-class Supply Chain
+              Ekosistem Teknologi Terintegrasi
             </span>
 
             <p className="text-3xl text-white font-light leading-relaxed color-transition max-w-sm mr-10">
-              Nanoartif operates a global network with production facilities and maintenance centers
-              strategically located to serve all five continents.
+              Nanoartif mengoperasikan jaringan teknologi di kota-kota besar Indonesia untuk memberikan solusi IT yang responsif dan berkualitas tinggi.
             </p>
           </div>
 
@@ -149,12 +148,12 @@ export default function PresenceSection() {
                     {locations[0].desc}
                   </p>
                 </div>
-                <div className="text-6xl self-end opacity-20 group-hover:opacity-40 transition-opacity transform group-hover:rotate-12">🇮🇹</div>
+                <div className="text-6xl self-end opacity-20 group-hover:opacity-40 transition-opacity transform group-hover:rotate-12">🇮🇩</div>
               </div>
 
               {/* Item 2: Tall Top Right - From Top */}
               <div className="bento-item lg:col-span-1 lg:row-span-3 bg-white/95 p-10 transition-all hover:-translate-y-2 group flex flex-col items-center text-center justify-center">
-                <div className="text-5xl mb-8 opacity-20 group-hover:opacity-100 transition-all scale-100 group-hover:scale-125">🇦🇹</div>
+                <div className="text-5xl mb-8 opacity-20 group-hover:opacity-100 transition-all scale-100 group-hover:scale-125">🇮🇩</div>
                 <h4 className="text-primary-blue font-bold text-xl mb-4 tracking-wide group-hover:text-black transition-colors">
                   {locations[1].city}
                 </h4>
@@ -165,7 +164,7 @@ export default function PresenceSection() {
 
               {/* Item 3: Tall Bottom Left - From Bottom */}
               <div className="bento-item lg:col-span-1 lg:row-span-3 bg-white/95 p-10 transition-all hover:-translate-y-2 group flex flex-col items-center text-center justify-center">
-                <div className="text-5xl mb-8 opacity-20 group-hover:opacity-100 transition-all scale-100 group-hover:scale-125">🇮🇳</div>
+                <div className="text-5xl mb-8 opacity-20 group-hover:opacity-100 transition-all scale-100 group-hover:scale-125">🇮🇩</div>
                 <h4 className="text-primary-blue font-bold text-xl mb-4 tracking-wide group-hover:text-black transition-colors">
                   {locations[2].city}
                 </h4>
@@ -180,7 +179,7 @@ export default function PresenceSection() {
                   <h4 className="text-primary-blue font-bold text-2xl mb-4 tracking-wide group-hover:text-black transition-colors">
                     {locations[3].city}
                   </h4>
-                  <div className="text-5xl opacity-20 group-hover:opacity-40 transition-opacity">🇦🇹</div>
+                  <div className="text-5xl opacity-20 group-hover:opacity-40 transition-opacity">🇮🇩</div>
                 </div>
                 <p className="text-lg text-gray-500 leading-relaxed font-medium mt-4">
                   {locations[3].desc}
@@ -193,7 +192,7 @@ export default function PresenceSection() {
         <div className="max-w-[1400px] mx-auto px-10 md:px-20 mt-32">
           <div className="pt-20 border-t border-white/10">
             <p className="text-white/40 text-xs font-light tracking-[0.3em] mb-12 text-center">
-              Strategic Partnerships & Collaborations
+              Kemitraan Strategis & Kolaborasi Teknologi
             </p>
 
             {/* Infinite Marquee */}

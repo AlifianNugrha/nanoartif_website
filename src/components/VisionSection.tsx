@@ -30,14 +30,14 @@ export default function VisionSection() {
     return () => ctx.revert();
   }, []);
 
-  const text = "Nanoartif is a tech company dedicated to pioneering the green energy transition through innovative engineering and sustainable power solutions.";
+  const text = "Nanoartif adalah perusahaan teknologi yang berdedikasi untuk memimpin transformasi digital melalui otomasi AI inovatif dan solusi konsultasi IT yang cerdas.";
 
   return (
     <section id="vision" ref={sectionRef} className="section-target py-32 pl-20 md:pl-60 pr-10 bg-white min-h-[80vh] flex items-center">
       <div className="max-w-[1200px] ml-auto">
         <div>
           <p className="text-secondary-blue text-sm font-secondary uppercase tracking-[0.3em] mb-12">
-            Our Purpose
+            Visi Kami
           </p>
           <h2 ref={textRef} className="text-6xl md:text-5xl font-sans font-light text-gray-300 leading-[1.3] tracking-tight max-w-5xl normal-case mr-10">
             {text.split(' ').map((word, i) => (

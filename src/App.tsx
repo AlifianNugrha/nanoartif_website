@@ -29,14 +29,14 @@ function App() {
 
   // Daftar navigasi sesuai urutan section kamu
   const navItems: NavItem[] = [
-    { name: 'About Us', id: 'vision' },
-    { name: 'Mission', id: 'mission' },
-    { name: 'Organization', id: 'organization' },
-    { name: 'Presence', id: 'presence' },
-    { name: 'Quality', id: 'quality' },
-    { name: 'Products', id: 'products' },
-    { name: 'Sustainability', id: 'sustainability' },
-    { name: 'Contact', id: 'contact' }
+    { name: 'Tentang Kami', id: 'vision' },
+    { name: 'Misi', id: 'mission' },
+    { name: 'Organisasi', id: 'organization' },
+    { name: 'Jaringan', id: 'presence' },
+    { name: 'Kualitas', id: 'quality' },
+    { name: 'Produk', id: 'products' },
+    { name: 'Teknologi', id: 'sustainability' },
+    { name: 'Kontak', id: 'contact' }
   ];
 
   useLayoutEffect(() => {

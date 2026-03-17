@@ -39,7 +39,7 @@ export default function Navbar({ navItems, activeSection, scrollTo }: NavbarProp
             <button className="w-12 h-12 bg-primary-blue text-white rounded-full flex items-center justify-center transition-transform hover:scale-110 shadow-lg shadow-primary-blue/20">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             </button>
-            <button className="w-12 h-12 bg-primary-blue text-white rounded-full flex items-center justify-center font-bold text-xs transition-transform hover:scale-110 shadow-lg shadow-primary-blue/20">EN</button>
+            <button className="w-12 h-12 bg-primary-blue text-white rounded-full flex items-center justify-center font-bold text-xs transition-transform hover:scale-110 shadow-lg shadow-primary-blue/20">ID</button>
           </div>
         </div>
       </div>

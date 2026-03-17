@@ -12,33 +12,33 @@ export default function Footer() {
               NANO<span className="text-white">ARTIF</span>
             </h3>
             <p className="text-white/70 text-base leading-relaxed max-w-sm font-medium">
-              We are a technology company dedicated to building the tech industry and helping society solve real-world problems through advanced automation and AI solutions.
+              Kami adalah perusahaan teknologi yang berdedikasi untuk membangun industri teknologi dan membantu masyarakat menyelesaikan masalah dunia nyata melalui solusi otomasi canggih dan AI.
             </p>
           </div>
 
           {/* Nav Links Grid */}
           <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-12">
             <div>
-              <h4 className="text-white font-bold text-xs uppercase tracking-[0.2em] mb-8 border-b border-white/20 pb-4 inline-block">Navigator</h4>
+              <h4 className="text-white font-bold text-xs uppercase tracking-[0.2em] mb-8 border-b border-white/20 pb-4 inline-block">Navigasi</h4>
               <nav className="flex flex-col gap-4">
-                <Link to="/company" className="text-white/60 hover:text-white transition-colors text-sm font-semibold">About Us</Link>
-                <Link to="/technology" className="text-white/60 hover:text-white transition-colors text-sm font-semibold">Technology</Link>
-                <Link to="/products" className="text-white/60 hover:text-white transition-colors text-sm font-semibold">Products</Link>
-                <Link to="/contact" className="text-white/60 hover:text-white transition-colors text-sm font-semibold">Contact</Link>
+                <Link to="/company" className="text-white/60 hover:text-white transition-colors text-sm font-semibold">Tentang Kami</Link>
+                <Link to="/technology" className="text-white/60 hover:text-white transition-colors text-sm font-semibold">Teknologi</Link>
+                <Link to="/products" className="text-white/60 hover:text-white transition-colors text-sm font-semibold">Produk</Link>
+                <Link to="/contact" className="text-white/60 hover:text-white transition-colors text-sm font-semibold">Kontak</Link>
               </nav>
             </div>
 
             <div>
-              <h4 className="text-white font-bold text-xs uppercase tracking-[0.2em] mb-8 border-b border-white/20 pb-4 inline-block">Legal</h4>
+              <h4 className="text-white font-bold text-xs uppercase tracking-[0.2em] mb-8 border-b border-white/20 pb-4 inline-block">Legalitas</h4>
               <nav className="flex flex-col gap-4">
-                <a href="#" className="text-white/60 hover:text-white transition-colors text-sm font-semibold">Privacy Policy</a>
-                <a href="#" className="text-white/60 hover:text-white transition-colors text-sm font-semibold">Cookie Policy</a>
-                <a href="#" className="text-white/60 hover:text-white transition-colors text-sm font-semibold">Terms of Service</a>
+                <a href="#" className="text-white/60 hover:text-white transition-colors text-sm font-semibold">Kebijakan Privasi</a>
+                <a href="#" className="text-white/60 hover:text-white transition-colors text-sm font-semibold">Kebijakan Cookie</a>
+                <a href="#" className="text-white/60 hover:text-white transition-colors text-sm font-semibold">Syarat & Ketentuan</a>
               </nav>
             </div>
 
             <div>
-              <h4 className="text-white font-bold text-xs uppercase tracking-[0.2em] mb-8 border-b border-white/20 pb-4 inline-block">Follow Us</h4>
+              <h4 className="text-white font-bold text-xs uppercase tracking-[0.2em] mb-8 border-b border-white/20 pb-4 inline-block">Ikuti Kami</h4>
               <div className="flex gap-4">
                 {['IN', 'TW', 'FB'].map((social) => (
                   <button key={social} className="w-12 h-12 rounded-full bg-white/10 hover:bg-white text-white hover:text-primary-blue transition-all duration-300 font-bold text-xs flex items-center justify-center border border-white/10">
@@ -66,7 +66,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-12 text-center text-[11px] text-white/50 font-Light tracking-widest">
-          © 2026 Nanoartif. All rights reserved.
+          © 2026 Nanoartif. Seluruh hak cipta dilindungi.
         </div>
       </div>
     </footer>

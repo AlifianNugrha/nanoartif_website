@@ -37,10 +37,10 @@ export default function SustainabilitySection() {
   }, []);
 
   const lines = [
-    "Sustainability is not",
-    "just a choice we make.",
-    "It is a commitment",
-    "to the generations to come."
+    "Teknologi bukan sekadar",
+    "pilihan yang kita ambil.",
+    "Ini adalah komitmen untuk",
+    "masa depan digital kita."
   ];
 
   return (

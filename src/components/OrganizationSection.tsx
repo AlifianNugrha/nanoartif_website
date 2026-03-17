@@ -67,10 +67,10 @@ export default function OrganizationSection() {
         {/* Left Side: Text */}
         <div className="reveal-text">
           <h2 className="text-3xl md:text-5xl font-light text-black tracking-tight leading-[0.95] mb-8 normal-case">
-            meet the people driving the future of energy.
+            bertemu dengan talenta penggerak inovasi digital.
           </h2>
           <p className="text-xl text-gray-500 font-light leading-relaxed max-w-md">
-            a dedicated group of specialists committed to engineering excellence and sustainable innovation.
+            sekelompok spesialis berdedikasi tinggi yang berkomitmen pada keunggulan teknologi dan inovasi berkelanjutan.
           </p>
         </div>
 

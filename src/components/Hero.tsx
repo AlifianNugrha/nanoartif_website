@@ -13,7 +13,7 @@ export default function Hero() {
       </video>
       <div className="hero-content absolute inset-0 flex items-end pb-6 px-6 z-10">
         <h1 className="text-white text-6xl md:text-8xl font-condensed leading-[0.85] tracking-tighter uppercase">
-          COMPANY
+          NANOARTIF
         </h1>
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/30"></div>

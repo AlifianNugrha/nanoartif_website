@@ -10,24 +10,24 @@ export default function QualitySection() {
   const sections = [
     {
       id: 'quality',
-      title: 'Quality management system',
-      label: 'QUALITY',
+      title: 'Sistem Manajemen Kualitas',
+      label: 'KUALITAS',
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-white/80 font-light leading-relaxed text-lg">
           <div className="space-y-6">
             <p>
-              The Nanoartif group first introduced its quality management system in 1994, in compliance with international regulation ISO 9001 and certified by SQS. The Quality management system is based on continuous control of company processes.
+              Nanoartif menerapkan standar manajemen kualitas tinggi dalam setiap pengembangan perangkat lunak dan solusi AI kami. Kami mengacu pada standar internasional seperti ISO 9001 untuk memastikan setiap output memenuhi ekspektasi klien secara konsisten.
             </p>
             <p>
-              The internal processes, from product development through to customer care are all customer-focused and orientated towards continued product improvement. The aims of our quality policy have always been to continuously improve products, support customers, and also to respect the environment.
+              Proses internal kami, mulai dari riset AI hingga implementasi teknis, berfokus pada kebutuhan pengguna dan perbaikan berkelanjutan. Tujuan kami adalah menciptakan produk digital yang andal, aman, dan efisien.
             </p>
           </div>
           <div className="space-y-6">
             <p>
-              Many other products and component parts are certified according to European and international standards. Under this aspect, the European machinery directive and the European standard that regulates the fabrication and assembly of steel and aluminium structures are of fundamental importance.
+              Keamanan data adalah prioritas utama kami. Kami menerapkan prinsip-prinsip ISO 27001 (Sistem Manajemen Keamanan Informasi) untuk melindungi aset digital dan data sensitif klien kami dari ancaman siber.
             </p>
             <p>
-              With ISO 45001 certification (Occupational Health and Safety), Nanoartif goes further in meeting the statutory requirements, introducing a system through which health and safety improvements are planned and implemented on an annual basis.
+              Dengan fokus pada pengembangan tangkas (Agile), Nanoartif memastikan fleksibilitas dan kecepatan dalam beradaptasi dengan perubahan kebutuhan bisnis, sambil tetap menjaga kualitas kode yang bersih dan terstandarisasi.
             </p>
           </div>
         </div>
@@ -35,18 +35,18 @@ export default function QualitySection() {
     },
     {
       id: 'ecnocity',
-      title: 'Ecnocity & Ethics',
-      label: 'ECNOCITY',
+      title: 'Etika AI & Transparansi',
+      label: 'ETIKA',
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-white/80 font-light leading-relaxed text-lg">
           <div className="space-y-6">
             <p>
-              Ecnocity represents our commitment to the fusion of ecology and technology. We believe that urban development and industrial excellence must go hand in hand with environmental preservation.
+              Kami percaya bahwa teknologi AI harus dikembangkan dengan tanggung jawab moral yang tinggi. Transparansi dalam algoritma dan penggunaan data adalah komitmen kami untuk membangun kepercayaan dengan mitra kami.
             </p>
           </div>
           <div className="space-y-6">
             <p>
-              Our ethical code ensures transparency and integrity across all levels of the organization, fostering a culture of responsibility and long-term sustainability.
+              Kode etik kami memastikan bahwa setiap solusi otomasi yang kami ciptakan memberikan dampak positif bagi efisiensi kerja tanpa mengabaikan faktor kemanusiaan dan keberlanjutan digital.
             </p>
           </div>
         </div>

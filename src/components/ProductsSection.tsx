@@ -94,10 +94,10 @@ export default function ProductsSection() {
         {/* Title & Info */}
         <div className={`transition-all duration-700 relative h-20 ${expandedIndex !== null ? 'opacity-0 h-0 mb-0 pointer-events-none' : 'mb-5'}`}>
           <p id="product-title-1" className="text-3xl text-black font-light leading-relaxed max-w-2xl mx-auto absolute inset-0">
-            empowering society with intelligent automation
+            memberdayakan masyarakat dengan otomasi cerdas
           </p>
           <p id="product-title-2" className="text-3xl text-black font-light leading-relaxed max-w-2xl mx-auto absolute inset-0 opacity-0">
-            let's collaborate to solve real-world problems
+            mari berkolaborasi untuk menyelesaikan masalah dunia nyata
           </p>
         </div>
 
