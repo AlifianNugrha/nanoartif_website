@@ -1,9 +1,11 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function SustainabilitySection() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const { t } = useLanguage();
 
   const colors = [
     "#005a8d", // Primary Blue
@@ -34,20 +36,21 @@ export default function SustainabilitySection() {
     }, sectionRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [t]);
 
   const lines = [
-    "Teknologi bukan sekadar",
-    "pilihan yang kita ambil.",
-    "Ini adalah komitmen untuk",
-    "masa depan digital kita."
+    t({ ID: "Teknologi bukan sekadar", EN: "Technology is not just" }),
+    t({ ID: "pilihan yang kita ambil.", EN: "a choice we make." }),
+    t({ ID: "Ini adalah komitmen untuk", EN: "It is a commitment for" }),
+    t({ ID: "masa depan digital kita.", EN: "our digital future." })
   ];
+
 
   return (
     <section
       id="sustainability"
       ref={sectionRef}
-      className="section-target pt-60 pb-80 px-10 bg-white"
+      className="section-target pt-32 pb-40 md:pt-60 md:pb-80 px-6 md:px-10 bg-white"
     >
       <div className="max-w-[1400px] mx-auto flex flex-col items-center text-center">
         <h2 className="text-2xl md:text-5xl lg:text-[45px] font-light tracking-tighter leading-[0.9] flex flex-col items-center normal-case">

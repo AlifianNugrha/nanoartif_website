@@ -37,7 +37,7 @@ export default function Products() {
       <section className="py-24 px-6 md:px-20 bg-white">
         <div className="text-center mb-20">
           <span className="text-primary-blue font-bold uppercase text-[11px] tracking-widest mb-3 block">Our Turbine Portfolio</span>
-          <h2 className="text-4xl md:text-6xl font-condensed font-bold text-black uppercase">POWERING PROGRESS</h2>
+          <h2 className="text-3xl md:text-6xl font-condensed font-bold text-black uppercase">POWERING PROGRESS</h2>
         </div>
         
         <div className="products-grid grid grid-cols-1 md:grid-cols-3 gap-10 max-w-[1400px] mx-auto">

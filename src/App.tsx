@@ -2,6 +2,7 @@ import { useRef, useLayoutEffect, useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { LanguageProvider, useLanguage } from './context/LanguageContext';
 
 // Import All Components
 import Navbar from './components/Navbar';
@@ -23,12 +24,13 @@ export interface NavItem {
   id: string;
 }
 
-function App() {
+function AppContent() {
   const [activeSection, setActiveSection] = useState<string>('vision');
   const appRef = useRef<HTMLDivElement>(null);
+  const { lang, setLang } = useLanguage();
 
-  // Daftar navigasi sesuai urutan section kamu
-  const navItems: NavItem[] = [
+  // Daftar navigasi dalam dua bahasa
+  const navItemsID = [
     { name: 'Tentang Kami', id: 'vision' },
     { name: 'Misi', id: 'mission' },
     { name: 'Organisasi', id: 'organization' },
@@ -38,6 +40,19 @@ function App() {
     { name: 'Teknologi', id: 'sustainability' },
     { name: 'Kontak', id: 'contact' }
   ];
+
+  const navItemsEN = [
+    { name: 'About Us', id: 'vision' },
+    { name: 'Mission', id: 'mission' },
+    { name: 'Organization', id: 'organization' },
+    { name: 'Network', id: 'presence' },
+    { name: 'Quality', id: 'quality' },
+    { name: 'Products', id: 'products' },
+    { name: 'Technology', id: 'sustainability' },
+    { name: 'Contact', id: 'contact' }
+  ];
+
+  const currentNavItems = lang === 'ID' ? navItemsID : navItemsEN;
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -93,40 +108,45 @@ function App() {
   };
 
   return (
+    <div className="flex flex-col min-h-screen bg-white font-main" ref={appRef}>
+      {/* Main Content */}
+      <main className="w-full">
+        {/* Section 1: Hero (Full Page, No Navbar initially) */}
+        <Hero />
+
+        {/* Wrapper untuk Sticky Navbar dan Konten Selanjutnya */}
+        <div className="relative w-full">
+          {/* Navbar Melayang */}
+          <Navbar
+            navItems={currentNavItems}
+            activeSection={activeSection}
+            scrollTo={scrollTo}
+            lang={lang}
+            setLang={setLang}
+          />
+
+          {/* Urutan Section (Halaman) */}
+          <VisionSection />
+          <MissionSection />
+          <OrganizationSection />
+          <PresenceSection />
+          <QualitySection />
+          <ProductsSection />
+          <SustainabilitySection />
+          <ContactSection />
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+function App() {
+  return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-white font-main" ref={appRef}>
-
-        {/* Main Content */}
-        <main className="w-full">
-
-          {/* Section 1: Hero (Full Page, No Navbar initially) */}
-          <Hero />
-
-          {/* Wrapper untuk Sticky Navbar dan Konten Selanjutnya */}
-          <div className="relative w-full">
-
-            {/* Navbar Melayang */}
-            <Navbar
-              navItems={navItems}
-              activeSection={activeSection}
-              scrollTo={scrollTo}
-            />
-
-            {/* Urutan Section (Halaman) */}
-            <VisionSection />
-            <MissionSection />
-            <OrganizationSection />
-            <PresenceSection />
-            <QualitySection />
-            <ProductsSection />
-            <SustainabilitySection />
-            <ContactSection />
-
-          </div>
-        </main>
-
-        <Footer />
-      </div>
+      <LanguageProvider>
+        <AppContent />
+      </LanguageProvider>
     </Router>
   );
 }

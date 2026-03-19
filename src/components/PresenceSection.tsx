@@ -1,17 +1,44 @@
 import { useRef, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function PresenceSection() {
   const containerRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
+  const { t } = useLanguage();
 
   const locations = [
-    { city: 'Jakarta, Indonesia', desc: 'Pusat operasional, konsultasi IT, dan manajemen proyek digital.' },
-    { city: 'Bandung, Indonesia', desc: 'Hub riset dan pengembangan (R&D) untuk solusi otomasi AI.' },
-    { city: 'Surabaya, Indonesia', desc: 'Layanan dukungan pelanggan dan implementasi infrastruktur IT.' },
-    { city: 'Yogyakarta, Indonesia', desc: 'Pusat pengembangan perangkat lunak dan talenta teknologi.' },
+    { 
+      city: t({ ID: 'Jakarta, Indonesia', EN: 'Jakarta, Indonesia' }), 
+      desc: t({ 
+        ID: 'Pusat operasional, konsultasi IT, dan manajemen proyek digital.',
+        EN: 'Operational center, IT consultancy, and digital project management.'
+      }) 
+    },
+    { 
+      city: t({ ID: 'Surakarta, Indonesia', EN: 'Surakarta, Indonesia' }), 
+      desc: t({ 
+        ID: 'Hub riset dan pengembangan (R&D) untuk solusi otomasi AI.',
+        EN: 'Research and development (R&D) hub for AI automation solutions.'
+      }) 
+    },
+    { 
+      city: t({ ID: 'Surabaya, Indonesia', EN: 'Surabaya, Indonesia' }), 
+      desc: t({ 
+        ID: 'Layanan dukungan pelanggan dan implementasi infrastruktur IT.',
+        EN: 'Customer support services and IT infrastructure implementation.'
+      }) 
+    },
+    { 
+      city: t({ ID: 'Yogyakarta, Indonesia', EN: 'Yogyakarta, Indonesia' }), 
+      desc: t({ 
+        ID: 'Pusat pengembangan perangkat lunak dan talenta teknologi.',
+        EN: 'Software development center and technology talent pool.'
+      }) 
+    },
   ];
+
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -101,7 +128,7 @@ export default function PresenceSection() {
           className="relative w-full h-[500px] md:h-[500px] overflow-hidden  pointer-events-none origin-center"
         >
           <img
-            src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1920"
+            src="/background.jpg"
             alt="Global Map"
             className="w-full h-full object-cover grayscale opacity-80"
           />
@@ -109,11 +136,11 @@ export default function PresenceSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-primary-blue/60 via-transparent to-transparent"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-10">
             <div className="w-1 h-20 bg-white/30 mb-8 rounded-full"></div>
-            <p className="font-bold text-3xl md:text-6xl tracking-[0.3em] text-white drop-shadow-2xl font-light">JARINGAN LOKAL</p>
+            <p className="font-bold text-2xl md:text-6xl tracking-[0.3em] text-white drop-shadow-2xl font-light">{t({ ID: 'JARINGAN LOKAL', EN: 'LOCAL NETWORK' })}</p>
             <div className="mt-8 flex items-center gap-4 text-white/80 font-bold tracking-widest text-xs uppercase">
               <span>Jakarta</span>
               <span className="w-2 h-2 rounded-full bg-white"></span>
-              <span>Bandung</span>
+              <span>Surakarta</span>
               <span className="w-2 h-2 rounded-full bg-white"></span>
               <span>Surabaya</span>
             </div>
@@ -121,25 +148,29 @@ export default function PresenceSection() {
         </div>
       </div>
 
-      <div className="max-w-[1400px] mx-auto px-10 md:px-20 mt-70">
-        <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
+      <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-20 mt-20 md:mt-70">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
 
           {/* Left Column: Title + Description */}
           <div className="lg:w-1/3">
             <span className="text-white font-light text-[12px] tracking-widest mb-6 block">
-              Ekosistem Teknologi Terintegrasi
+              {t({ ID: 'Ekosistem Teknologi Terintegrasi', EN: 'Integrated Tech Ecosystem' })}
             </span>
 
-            <p className="text-3xl text-white font-light leading-relaxed color-transition max-w-sm mr-10">
-              Nanoartif mengoperasikan jaringan teknologi di kota-kota besar Indonesia untuk memberikan solusi IT yang responsif dan berkualitas tinggi.
+            <p className="text-xl md:text-3xl text-white font-light leading-relaxed color-transition max-w-sm mr-0 lg:mr-10">
+              {t({ 
+                ID: 'Nanoartif mengoperasikan jaringan teknologi di kota-kota besar Indonesia untuk memberikan solusi IT yang responsif dan berkualitas tinggi.',
+                EN: 'Nanoartif operates a technology network in major Indonesian cities to provide responsive and high-quality IT solutions.'
+              })}
             </p>
           </div>
 
+
           {/* Right Column: Bento Pinwheel Grid */}
           <div className="lg:w-2/3">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[100px]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-auto lg:auto-rows-[100px]">
               {/* Item 1: Wide Top Left - From Left */}
-              <div className="bento-item lg:col-span-2 lg:row-span-2 bg-white/95 p-12 transition-all hover:-translate-y-2 group flex flex-col justify-between">
+              <div className="bento-item lg:col-span-2 row-span-2 lg:row-span-2 bg-white/95 p-8 md:p-12 transition-all hover:-translate-y-2 group flex flex-col justify-between min-h-[250px] lg:min-h-0">
                 <div>
                   <h4 className="text-primary-blue font-bold text-2xl mb-4 tracking-wide group-hover:text-black transition-colors">
                     {locations[0].city}
@@ -148,12 +179,12 @@ export default function PresenceSection() {
                     {locations[0].desc}
                   </p>
                 </div>
-                <div className="text-6xl self-end opacity-20 group-hover:opacity-40 transition-opacity transform group-hover:rotate-12">🇮🇩</div>
+                <div className="text-4xl md:text-6xl self-end opacity-20 group-hover:opacity-40 transition-opacity transform group-hover:rotate-12">🇮🇩</div>
               </div>
 
               {/* Item 2: Tall Top Right - From Top */}
-              <div className="bento-item lg:col-span-1 lg:row-span-3 bg-white/95 p-10 transition-all hover:-translate-y-2 group flex flex-col items-center text-center justify-center">
-                <div className="text-5xl mb-8 opacity-20 group-hover:opacity-100 transition-all scale-100 group-hover:scale-125">🇮🇩</div>
+              <div className="bento-item lg:col-span-1 row-span-2 sm:row-span-3 lg:row-span-3 bg-white/95 p-8 md:p-10 transition-all hover:-translate-y-2 group flex flex-col items-center text-center justify-center min-h-[250px] lg:min-h-0">
+                <div className="text-4xl md:text-5xl mb-6 md:mb-8 opacity-20 group-hover:opacity-100 transition-all scale-100 group-hover:scale-125">🇮🇩</div>
                 <h4 className="text-primary-blue font-bold text-xl mb-4 tracking-wide group-hover:text-black transition-colors">
                   {locations[1].city}
                 </h4>
@@ -163,8 +194,8 @@ export default function PresenceSection() {
               </div>
 
               {/* Item 3: Tall Bottom Left - From Bottom */}
-              <div className="bento-item lg:col-span-1 lg:row-span-3 bg-white/95 p-10 transition-all hover:-translate-y-2 group flex flex-col items-center text-center justify-center">
-                <div className="text-5xl mb-8 opacity-20 group-hover:opacity-100 transition-all scale-100 group-hover:scale-125">🇮🇩</div>
+              <div className="bento-item lg:col-span-1 row-span-2 sm:row-span-3 lg:row-span-3 bg-white/95 p-8 md:p-10 transition-all hover:-translate-y-2 group flex flex-col items-center text-center justify-center min-h-[250px] lg:min-h-0">
+                <div className="text-4xl md:text-5xl mb-6 md:mb-8 opacity-20 group-hover:opacity-100 transition-all scale-100 group-hover:scale-125">🇮🇩</div>
                 <h4 className="text-primary-blue font-bold text-xl mb-4 tracking-wide group-hover:text-black transition-colors">
                   {locations[2].city}
                 </h4>
@@ -174,12 +205,12 @@ export default function PresenceSection() {
               </div>
 
               {/* Item 4: Wide Bottom Right - From Right */}
-              <div className="bento-item lg:col-span-2 lg:row-span-2 bg-white/95 p-12 transition-all hover:-translate-y-2 group flex flex-col justify-between">
+              <div className="bento-item lg:col-span-2 row-span-2 lg:row-span-2 bg-white/95 p-8 md:p-12 transition-all hover:-translate-y-2 group flex flex-col justify-between min-h-[250px] lg:min-h-0">
                 <div className="flex justify-between items-start">
                   <h4 className="text-primary-blue font-bold text-2xl mb-4 tracking-wide group-hover:text-black transition-colors">
                     {locations[3].city}
                   </h4>
-                  <div className="text-5xl opacity-20 group-hover:opacity-40 transition-opacity">🇮🇩</div>
+                  <div className="text-4xl md:text-5xl opacity-20 group-hover:opacity-40 transition-opacity">🇮🇩</div>
                 </div>
                 <p className="text-lg text-gray-500 leading-relaxed font-medium mt-4">
                   {locations[3].desc}
@@ -189,11 +220,12 @@ export default function PresenceSection() {
           </div>
 
         </div>
-        <div className="max-w-[1400px] mx-auto px-10 md:px-20 mt-32">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-10 lg:px-20 mt-32">
           <div className="pt-20 border-t border-white/10">
             <p className="text-white/40 text-xs font-light tracking-[0.3em] mb-12 text-center">
-              Kemitraan Strategis & Kolaborasi Teknologi
+              {t({ ID: 'Kemitraan Strategis & Kolaborasi Teknologi', EN: 'Strategic Partnership & Tech Collaboration' })}
             </p>
+
 
             {/* Infinite Marquee */}
             <div className="relative flex overflow-x-hidden group">
