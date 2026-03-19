@@ -36,6 +36,13 @@ export default function MissionSection() {
         ID: "Menjadi mitra terpercaya dalam memberikan konsultasi tech yang mendalam untuk membantu pertumbuhan bisnis Anda secara berkelanjutan.",
         EN: "Becoming a trusted partner in providing deep tech consultancy to help your business grow sustainably."
       })
+    },
+    {
+      title: t({ ID: "Keamanan Siber AI", EN: "AI Cyber Security" }),
+      desc: t({ 
+        ID: "Mengembangkan sistem perlindungan data yang proaktif dengan AI untuk menjaga aset digital Anda dari ancaman keamanan yang terus berkembang.",
+        EN: "Developing proactive data protection systems with AI to safeguard your digital assets from ever-evolving security threats."
+      })
     }
   ];
 
@@ -62,7 +69,7 @@ export default function MissionSection() {
       });
 
       // Animate text colors for contrast against blue background
-      const darkTexts = containerRef.current?.querySelectorAll('h2, h3, p:not(.text-gray-600)');
+      const darkTexts = containerRef.current?.querySelectorAll('h2, h3, span, p:not(.text-gray-600)');
       if (darkTexts) {
         gsap.to(darkTexts, {
           color: '#ffffff',
