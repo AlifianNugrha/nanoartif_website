@@ -136,7 +136,7 @@ function AppContent() {
           <ContactSection />
         </div>
       </main>
-      <Footer />
+      <Footer scrollTo={scrollTo} />
     </div>
   );
 }
