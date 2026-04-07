@@ -24,7 +24,7 @@ export default function ProductsSection() {
         EN: 'Landing pages, company profiles, to e-commerce with modern & responsive design.'
       }),
       image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1200',
-      link: '#contact',
+      link: 'https://jasaby.nanoartif.my.id',
       label: t({ ID: 'Jasa Pembuatan', EN: 'Development Service' })
     },
     {
@@ -34,7 +34,7 @@ export default function ProductsSection() {
         EN: 'Information systems, ERP, and custom systems to automate your business processes.'
       }),
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200',
-      link: '#contact',
+      link: 'https://jasaby.nanoartif.my.id',
       label: t({ ID: 'Jasa Pembuatan', EN: 'Development Service' })
     },
     {
@@ -44,7 +44,7 @@ export default function ProductsSection() {
         EN: 'Mobile apps, desktop apps, to custom AI solutions for your specific needs.'
       }),
       image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200',
-      link: '#contact',
+      link: 'https://jasaby.nanoartif.my.id',
       label: t({ ID: 'Jasa Pembuatan', EN: 'Development Service' })
     }
   ];
