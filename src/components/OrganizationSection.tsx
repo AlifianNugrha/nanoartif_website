@@ -8,12 +8,13 @@ export default function OrganizationSection() {
   const { t } = useLanguage();
 
   const team = [
-    { name: 'Pandu Alifian Nugroho', role: 'Founder and Leader', image: '/pandu.jpeg', size: 'large' },
-    { name: 'Rico Ilham Nugroho', role: 'Team Management', image: '/pandu.jpeg', size: 'small' },
-    { name: 'Rangga Arlo PP', role: 'Team Management', image: '/pandu.jpeg', size: 'small' },
-    { name: 'Zidhan Alka BA', role: 'Team Management', image: '/pandu.jpeg', size: 'small' },
-    { name: 'Muhammad Arya Ulhaq', role: 'Team Management', image: '/pandu.jpeg', size: 'small' },
-    { name: 'Farrel Kumara H', role: 'Team Management', image: '/pandu.jpeg', size: 'small' },
+    { name: 'Pandu Alifian Nugroho', role: 'Founder and Leader', size: 'large' },
+    { name: 'Rico Ilham Nugroho', role: 'Team Management', size: 'small' },
+    { name: 'Rangga Arlo PP', role: 'Team Management', size: 'small' },
+    { name: 'Zidhan Alka BA', role: 'Team Management', size: 'small' },
+    { name: 'Muhammad Arya Ulhaq', role: 'Team Management', size: 'small' },
+    { name: 'Farrel Kumara H', role: 'Team Management', size: 'small' },
+    { name: 'Andika Listiyanto', role: 'Team Management', size: 'small' },
   ];
 
 
